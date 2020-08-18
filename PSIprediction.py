@@ -51,7 +51,7 @@ def ARmodel(df):
     train_size = int(len(df) * 0.8)   
     train, test = y[0:train_size], y[train_size:]
     
-    model = AutoReg(train, lags=3)
+    model = AutoReg(train, lags=1)
     model_fit = model.fit()
     
     preds = model_fit.predict(start=0, end=3000)

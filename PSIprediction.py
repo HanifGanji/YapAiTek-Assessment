@@ -27,8 +27,8 @@ df.set_index('Date', inplace=True)
 plt.show()'''
 
 #Uncomment the below code to see if the data is stationary or not(which is)
-'''def adfuller_test(sales):
-    result=adfuller(sales)
+'''def adfuller_test(PSI):
+    result=adfuller(PSI)
     labels = ['ADF Test Statistic','p-value','#Lags Used','Number of Observations Used']
     for value,label in zip(result,labels):
         print(label+' : '+str(value) )
